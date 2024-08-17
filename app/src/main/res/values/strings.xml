@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="false">My Application</string>
+    <string name="input_your_password" translatable="false">Input Your password</string>
+    <string name="type_your_email" translatable="false">Type your Email</string>
+    <string name="sign_in" translatable="false">Sign in</string>
+    <string name="sign_up" translatable="false">Sign up</string>
+    <string name="enter_name" translatable="false">Enter name</string>
+    <string name="enter_mobile_number" translatable="false">Enter Mobile number</string>
+    <string name="enter_your_email" translatable="false">Enter your Email</string>
+    <string name="type_your_password" translatable="false">Type your password</string>
+    <string name="retype_password" translatable="false">Retype password</string>
+</resources>

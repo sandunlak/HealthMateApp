@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity3_call3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_call2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_call1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_Enter_New_PW"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_Enter_veri_code"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_Forget_password"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_trainer3_call"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_trainer2_call"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_trainer1_call"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_per_train3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_per_train2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_per_train1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_dinner"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_luanch"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_breakfest"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_Food_page"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_Female_Workout"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_Home_Workout"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_Gym_workout"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_HomeandGym_workout"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_CheckMF"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_Homepage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
