@@ -4,5 +4,18 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="Darkblue">#3F51B5</color>
+    <color name="background_color">#E3F2FD</color> <!-- Light Blue background -->
+    <color name="primary_text">#212121</color> <!-- Dark Gray for Text -->
+    <color name="trainer1_text">#1976D2</color> <!-- Blue for Trainer 1 -->
+    <color name="trainer2_text">#D32F2F</color> <!-- Red for Trainer 2 -->
+    <color name="trainer3_text">#388E3C</color> <!-- Green for Trainer 3 -->
+    <color name="submit_button_background">#FF5722</color> <!-- Orange for the button -->
+    <color name="button_text">#FFFFFF</color> <!-- White button text -->
+
+    <color name="title_text_color">#212121</color> <!-- Dark gray for title text -->
+    <color name="trainer_name_text_color">#1976D2</color> <!-- Blue for trainer name -->
+    <color name="update_button_color">#4CAF50</color> <!-- Green for update button -->
+    <color name="delete_button_color">#F44336</color> <!-- Red for delete button -->
+
 
 </resources>

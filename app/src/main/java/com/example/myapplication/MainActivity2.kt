@@ -1,30 +1,46 @@
 package com.example.myapplication
 
-import android.annotation.SuppressLint
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import androidx.activity.enableEdgeToEdge
+import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity2 : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+    lateinit var entername: EditText
+    lateinit var enterphone: EditText
+    lateinit var enteremail: EditText
+    lateinit var enterpw: EditText
+    lateinit var submitbtn: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main2)
 
-        val Signupbtn = findViewById<Button>(R.id.buttonsignup_back)
-        Signupbtn.setOnClickListener {
-            val Intent = Intent(this,MainActivity::class.java)
-            startActivity(Intent)
-        }
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        entername = findViewById(R.id.inputweight)
+        enterphone = findViewById(R.id.inputphone)
+        enteremail = findViewById(R.id.inputemail)
+        enterpw = findViewById(R.id.inputpassword)
+        submitbtn = findViewById(R.id.buttonsubmit)
+
+        submitbtn.setOnClickListener {
+            val sharedPref = getSharedPreferences("Register data", MODE_PRIVATE)
+            val editor = sharedPref.edit()
+
+            val n = entername.text.toString()
+            val p = enterphone.text.toString()
+            val e = enteremail.text.toString()
+            val pw = enterpw.text.toString()
+
+            // Store the data
+            editor.putString("name", n)
+            editor.putString("phone", p)
+            editor.putString("email", e)
+            editor.putString("password", pw)
+            editor.apply()
+
+            // Debugging: Show a Toast message
+            Toast.makeText(this, "Data saved: $n, $p, $e, $pw", Toast.LENGTH_LONG).show()
         }
     }
 }

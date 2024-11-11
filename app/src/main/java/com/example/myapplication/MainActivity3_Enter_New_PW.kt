@@ -17,7 +17,7 @@ class MainActivity3_Enter_New_PW : AppCompatActivity() {
 
         val button_confirm = findViewById<Button>(R.id.button_Reenter_pw_confirm)
         button_confirm.setOnClickListener {
-            val Intent = Intent(this,MainActivity::class.java)
+            val Intent = Intent(this,MainActivity1::class.java)
             startActivity(Intent)
         }
 

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name" translatable="false">My Application</string>
     <string name="input_your_password" translatable="false">Input Your password</string>
     <string name="type_your_email" translatable="false">Type your Email</string>
@@ -9,4 +9,13 @@
     <string name="enter_your_email" translatable="false">Enter your Email</string>
     <string name="type_your_password" translatable="false">Type your password</string>
     <string name="retype_password" translatable="false">Retype password</string>
+    <string name="pushup_image" tools:ignore="MissingTranslation" />
+    <string name="pullup_image" tools:ignore="MissingTranslation" />
+    <string name="dips_image" tools:ignore="MissingTranslation" />
+    <string name="lunges_image" tools:ignore="MissingTranslation" />
+    <string name="plank_image" tools:ignore="MissingTranslation" />
+    <string name="squats_image" tools:ignore="MissingTranslation" />
+    <string name="crunches_image" tools:ignore="MissingTranslation" />
+    <string name="mountain_climb_image" tools:ignore="MissingTranslation" />
+    <string name="home" translatable="false">Home</string>
 </resources>

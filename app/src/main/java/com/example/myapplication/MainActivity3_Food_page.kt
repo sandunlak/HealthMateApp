@@ -17,28 +17,54 @@ class MainActivity3_Food_page : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main_activity3_food_page)
 
-        val imageButtonbreakfest: ImageButton = findViewById(R.id.imageButton_breakfest)
+        val imageButtonbreakfest: ImageButton = findViewById(R.id.imageButton1_medic)
 
         imageButtonbreakfest.setOnClickListener {
             // Navigate to SecondActivity when the button is pressed
-            val intent = Intent(this,MainActivity3_breakfest::class.java)
+            val intent = Intent(this,MainActivity3_medic1::class.java)
             startActivity(intent)
         }
 
-        val imageButtonluanch: ImageButton = findViewById(R.id.imageButton_luanch)
+        val imageButtonluanch: ImageButton = findViewById(R.id.imageButton2_medic)
 
         imageButtonluanch.setOnClickListener {
             // Navigate to SecondActivity when the button is pressed
-            val intent = Intent(this,MainActivity3_luanch::class.java)
+            val intent = Intent(this,MainActivity3_medic2::class.java)
             startActivity(intent)
         }
-        val imageButtondinner: ImageButton = findViewById(R.id.imageButton_dinner)
+        val imageButtondinner: ImageButton = findViewById(R.id.imageButton3_medic)
 
         imageButtondinner.setOnClickListener {
             // Navigate to SecondActivity when the button is pressed
-            val intent = Intent(this,MainActivity3_dinner::class.java)
+            val intent = Intent(this,MainActivity3_medic3::class.java)
             startActivity(intent)
         }
+        val imageButtondinner1: ImageButton = findViewById(R.id.imageButton4)
+
+        imageButtondinner1.setOnClickListener {
+            // Navigate to SecondActivity when the button is pressed
+            val intent = Intent(this,MainActivity3_medic4::class.java)
+            startActivity(intent)
+        }
+
+        val imageButtondinner2: ImageButton = findViewById(R.id.imageButton5)
+
+        imageButtondinner2.setOnClickListener {
+            // Navigate to SecondActivity when the button is pressed
+            val intent = Intent(this,MainActivity3_medic5::class.java)
+            startActivity(intent)
+        }
+        val imageButtondinner3: ImageButton = findViewById(R.id.imageButton6)
+
+        imageButtondinner3.setOnClickListener {
+            // Navigate to SecondActivity when the button is pressed
+            val intent = Intent(this,MainActivity3_medic6::class.java)
+            startActivity(intent)
+        }
+
+
+
+
 
         val Backtoworkoutbutton = findViewById<Button>(R.id.button_backhome)
         Backtoworkoutbutton.setOnClickListener {

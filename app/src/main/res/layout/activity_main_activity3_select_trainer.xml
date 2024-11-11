@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/text_select_trainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a Trainer"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text"
+        android:gravity="center"
+        android:paddingBottom="24dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Trainer 1 -->
+    <CheckBox
+        android:id="@+id/checkbox_trainer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trainer 1"
+        android:background="@drawable/checkbox_background"
+        android:textColor="@color/trainer1_text"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp" />
+
+    <!-- Trainer 2 -->
+    <CheckBox
+        android:id="@+id/checkbox_trainer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trainer 2"
+        android:background="@drawable/checkbox_background"
+        android:textColor="@color/trainer2_text"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp" />
+
+    <!-- Trainer 3 -->
+    <CheckBox
+        android:id="@+id/checkbox_trainer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trainer 3"
+        android:background="@drawable/checkbox_background"
+        android:textColor="@color/trainer3_text"
+        android:layout_marginBottom="24dp"
+        android:padding="10dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_trainer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trainer 3"
+        android:background="@drawable/checkbox_background"
+        android:textColor="@color/trainer3_text"
+        android:layout_marginBottom="24dp"
+        android:padding="10dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_trainer5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trainer 3"
+        android:background="@drawable/checkbox_background"
+        android:textColor="@color/trainer3_text"
+        android:layout_marginBottom="24dp"
+        android:padding="10dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_trainer6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trainer 3"
+        android:background="@drawable/checkbox_background"
+        android:textColor="@color/trainer3_text"
+        android:layout_marginBottom="24dp"
+        android:padding="10dp" />
+
+    <!-- Button to submit selection -->
+    <Button
+        android:id="@+id/btn_submit_trainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:backgroundTint="@color/submit_button_background"
+        android:textColor="@color/button_text"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_gravity="center_horizontal"
+        android:elevation="4dp" />
+</LinearLayout>

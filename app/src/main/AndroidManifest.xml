@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions for Notifications and Boot Completion -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +18,57 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_medic6"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_medic5"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_medic4"
+            android:exported="false" />
+        <activity
+            android:name="com.example.timerapp.MainActivity_alarm"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity3_medic3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_medic2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_medic1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_Display_trainer"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_select_trainer"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_timerpage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_showbodycondition"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_addbodycondition"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_userdetails"
+            android:exported="false" />
         <activity
             android:name=".MainActivity3_call3"
             android:exported="false" />
@@ -55,9 +112,6 @@
             android:name=".MainActivity3_luanch"
             android:exported="false" />
         <activity
-            android:name=".MainActivity3"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity3_breakfest"
             android:exported="false" />
         <activity
@@ -83,9 +137,9 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
-            android:exported="false" />
+            android:exported="false" /> <!-- Main Launcher Activity -->
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

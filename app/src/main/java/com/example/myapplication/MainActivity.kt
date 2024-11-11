@@ -1,43 +1,44 @@
-package com.example.myapplication
-
 import android.annotation.SuppressLint
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import androidx.activity.enableEdgeToEdge
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.Observer
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.R
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var taskViewModel: TaskViewModel
+    private lateinit var taskAdapter: TaskAdapter
+    private lateinit var recyclerView: RecyclerView
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main31)
 
-        val button_signin = findViewById<Button>(R.id.buttonsignin)
-        button_signin.setOnClickListener {
-            val Intent = Intent(this,MainActivity3_Homepage::class.java)
-            startActivity(Intent)
-        }
+        // Initialize the ViewModel
+        val taskDao = TaskDatabase.getDatabase(application).taskDao()
+        val repository = TaskRepository(taskDao)
+        taskViewModel = TaskViewModel(repository)
 
-        val button_signup = findViewById<Button>(R.id.button_signup)
-        button_signup.setOnClickListener {
-            val Intent = Intent(this,MainActivity2::class.java)
-            startActivity(Intent)
-        }
+        // Set up RecyclerView
+        recyclerView = findViewById(R.id.recycler_view_tasks)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        taskAdapter = TaskAdapter(emptyList())  // Start with an empty list
+        recyclerView.adapter = taskAdapter
 
-        val button_FPW = findViewById<Button>(R.id.button_forget_password)
-        button_FPW.setOnClickListener {
-            val Intent = Intent(this,MainActivity_Forget_password::class.java)
-            startActivity(Intent)
-        }
+        // Fetch and observe tasks
+        taskViewModel.allTasks.observe(this, Observer { tasks ->
+            taskAdapter = TaskAdapter(tasks)
+            recyclerView.adapter = taskAdapter
+        })
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        // Button to add a new task
+        findViewById<View>(R.id.button_add_task).setOnClickListener {
+            val newTask = Task(title = "Sample Task", description = "Task description", status = false, date = "2024-10-11")
+            taskViewModel.insertTask(newTask)
         }
     }
 }

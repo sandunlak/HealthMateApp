@@ -12,7 +12,6 @@
         android:layout_height="match_parent"
         android:background="#21AAF3"
         android:overScrollMode="never"
-
         android:scrollbars="vertical">
 
         <LinearLayout
@@ -28,15 +27,13 @@
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp">
 
-                <ImageView
+                <ImageButton
+                    android:id="@+id/button1"
                     android:layout_width="wrap_content"
                     android:layout_height="1in"
                     android:layout_margin="5dp"
                     android:background="#21AAF3"
-
-                    android:src="@drawable/bench_press">
-
-                </ImageView>
+                    android:src="@drawable/bench_press" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -45,12 +42,10 @@
                     android:layout_gravity="center"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-
-                    android:textSize="23dp">
-
-                </TextView>
+                    android:textSize="23dp"/>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,15 +54,13 @@
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp">
 
-                <ImageView
+                <ImageButton
+                    android:id="@+id/button2"
                     android:layout_width="wrap_content"
                     android:layout_height="1in"
                     android:layout_margin="5dp"
                     android:background="#21AAF3"
-
-                    android:src="@drawable/bent_over_rows">
-
-                </ImageView>
+                    android:src="@drawable/bent_over_rows" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -76,12 +69,10 @@
                     android:layout_gravity="center"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-
-                    android:textSize="23dp">
-
-                </TextView>
+                    android:textSize="23dp"/>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -90,15 +81,13 @@
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp">
 
-                <ImageView
+                <ImageButton
+                    android:id="@+id/button3"
                     android:layout_width="wrap_content"
                     android:layout_height="1in"
                     android:layout_margin="5dp"
                     android:background="#21AAF3"
-
-                    android:src="@drawable/shoulder_press">
-
-                </ImageView>
+                    android:src="@drawable/shoulder_press" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -107,12 +96,10 @@
                     android:layout_gravity="center"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-
-                    android:textSize="23dp">
-
-                </TextView>
+                    android:textSize="23dp"/>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -121,15 +108,13 @@
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp">
 
-                <ImageView
+                <ImageButton
+                    android:id="@+id/button4"
                     android:layout_width="wrap_content"
                     android:layout_height="1in"
                     android:layout_margin="5dp"
                     android:background="#21AAF3"
-
-                    android:src="@drawable/bicep_curls">
-
-                </ImageView>
+                    android:src="@drawable/bicep_curls" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -138,12 +123,10 @@
                     android:layout_gravity="center"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-
-                    android:textSize="23dp">
-
-                </TextView>
+                    android:textSize="23dp"/>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -152,15 +135,13 @@
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp">
 
-                <ImageView
+                <ImageButton
+                    android:id="@+id/button5"
                     android:layout_width="wrap_content"
                     android:layout_height="1in"
                     android:layout_margin="5dp"
                     android:background="#21AAF3"
-
-                    android:src="@drawable/lateral_raisess">
-
-                </ImageView>
+                    android:src="@drawable/lateral_raisess" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -169,12 +150,10 @@
                     android:layout_gravity="center"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-
-                    android:textSize="23dp">
-
-                </TextView>
+                    android:textSize="23dp"/>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -183,15 +162,13 @@
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp">
 
-                <ImageView
+                <ImageButton
+                    android:id="@+id/button6"
                     android:layout_width="wrap_content"
                     android:layout_height="1in"
                     android:layout_margin="5dp"
                     android:background="#21AAF3"
-
-                    android:src="@drawable/squats">
-
-                </ImageView>
+                    android:src="@drawable/squats" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -200,13 +177,12 @@
                     android:layout_gravity="center"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-
-                    android:textSize="23dp">
-
-                </TextView>
+                    android:textSize="23dp"/>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/button7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -214,28 +190,22 @@
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp">
 
-                <ImageView
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="1in"
-                    android:layout_margin="5dp"
                     android:layout_gravity="center"
+                    android:layout_margin="5dp"
                     android:background="#21AAF3"
-
-                    android:src="@drawable/leg_press">
-
-                </ImageView>
+                    android:src="@drawable/leg_press" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingLeft="1.1in"
                     android:layout_gravity="center"
-                    android:textStyle="bold"
+                    android:paddingLeft="1.1in"
                     android:textColor="@color/white"
-
-                    android:textSize="23dp">
-
-                </TextView>
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
 
             </androidx.cardview.widget.CardView>
 
@@ -252,7 +222,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.282" />
-
 
         </LinearLayout>
 

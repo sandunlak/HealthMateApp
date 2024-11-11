@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_userdetails"
+        android:title="User Details"
+        android:icon="@drawable/sign" />
+    <item
+        android:id="@+id/nav_home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/nav_workout"
+        android:title="Workout" />
+    <item
+        android:id="@+id/nav_food"
+        android:title="Remainder" />
+    <item
+        android:id="@+id/nav_trainer"
+        android:title="Trainer" />
+    <item
+        android:id="@+id/nav_adddetails"
+        android:title="Add Details" />
+</menu>
